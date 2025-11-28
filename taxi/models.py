@@ -8,7 +8,7 @@ class Manufacturer(models.Model):
     country = models.CharField(max_length=63)
 
     def __str__(self):
-        return f"{self.name}"
+        return self.name
 
 
 class Driver(AbstractUser):
